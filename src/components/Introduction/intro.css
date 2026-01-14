@@ -1,0 +1,49 @@
+.intro {
+  color: beige;
+  text-align: center;
+}
+
+.intro-wrapper {
+  min-height: 100vh;
+  padding: 0 1.5rem 0rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.intro-breadcrumbs {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.name {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #FFD60A;
+}
+
+.hello {
+  font-size: 2.75rem;
+  color: #FFD60A;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
