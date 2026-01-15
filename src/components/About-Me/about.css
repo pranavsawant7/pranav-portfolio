@@ -1,0 +1,112 @@
+.about-section {
+  min-height: 100vh;
+  padding: 0rem 0rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 0.25rem solid #ffd60a;
+  border-radius: 0.75rem;
+  padding: 3rem;
+}
+
+.about-left {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 2.5rem;
+  border-right: 2px solid rgba(255, 214, 10, 0.6);
+}
+
+.about-image {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffd60a;
+}
+
+.about-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  animation: nameFade 0.4s ease-in-out;
+  letter-spacing: 0.15rem;
+}
+
+.about-role {
+  margin-top: 1.25rem;
+  color: #ffd60a;
+  font-size: 1rem;
+}
+
+.about-divider {
+  width: 1px;
+  height: 13.75rem;
+  background-color: rgba(255, 214, 10, 0.6);
+}
+
+.about-right {
+  flex: 1;
+  padding-left: 2.5rem;
+}
+
+.skills-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-description-wrapper {
+  position: relative;
+}
+
+.about-description.ghost {
+  visibility: hidden;
+  white-space: pre-line;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.about-description.typewriter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: normal;
+  line-height: 2;
+  word-spacing: 0.25rem;
+  font-size: 0.95rem;
+  margin: 0;
+  color: #fffff0;
+}
